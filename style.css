@@ -1,0 +1,92 @@
+body{
+    background: #eef9fd;
+    }
+
+/* Clear Fix        */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+nav{
+    background:white;
+    height: 2.3em;
+}
+
+ul, li{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    float: left;
+    }
+ul{
+        background: darkblue;
+    height: 4em;
+    width: 100%;}
+li{
+   position: relative;
+}
+li a{
+    display: block;
+    padding: 0 2em;
+    line-height: 4em;
+    color: white;
+    width: 237px;
+    text-align: center;
+    text-decoration: none;
+    border-right: 2px solid white;
+    font-weight: bold;
+    }
+
+li a:hover{
+    background: lightblue;
+}
+
+.current, a:hover.current {
+	background: lightblue;
+	color: white;
+	
+
+
+}
+ul.submenu {
+    float: none;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 4em;
+    left: 100em;
+    }
+ul.submenu a{
+    float: none;   
+    }
+.menu li:hover ul{
+    left: 0;
+    }
+.submenu li a {
+    color: black;
+    background: white;
+    white-space: nowrap;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    }
+.submenu li:last-child a{
+    border-bottom: none;
+    }
+.submenu li a:hover{
+    background: yellow;
+    color: black;
+    }
+
